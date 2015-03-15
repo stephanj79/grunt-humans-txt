@@ -78,37 +78,32 @@ grunt.initConfig({
     options: {
       commentStyle: 'u',
       content: {
-        'team': [ {
+        'team': [{
           'Web developer': 'Neil Barton',
           'Site': 'http://www.roughcoder.com',
           'Twitter': '@roughcoder',
           'Location': 'London, UK'
-
           },
           {
             'Ruby guy': 'Sam Jones',
             'Site': 'http://www.samjones.com',
             'Twitter': '@samjones'
-          }
-        ],
-        'thanks': [
-          {
+          }],
+        'thanks': [{
             'Name': 'David Jones',
             'Website': 'www.google.com'
-          }
-        ],
-        'site': [ {
+          }],
+        'site': [{
             'Version': '<%= pkg.version %>',
             'Site Url': '<%= pkg.homepage %>',
             'Keywords': '<%= pkg.keywords %>',
             'Language': 'English',
             'Technology': 'node.js, apache'
-          }
-        ]
-      },
+          }]
+      }
     },
-    dest: 'humans.txt', 
-  },
+    files:{dest:'humans.txt'} 
+  }
 })
 ```
 
